@@ -1,0 +1,50 @@
+type Kalc {
+
+  main {
+    if args.size != 3 {
+      println("Usage: Kalc <n1> <operator> <n2>")
+      print("input was: ")
+      for i: ..args.size {
+        print(args[i])
+        print(" ")
+      }
+      println("")
+      return
+    } else {
+        int n1: parseInt(args[0])
+        int n2: parseInt(args[2])
+
+        if args[1] = "+" {
+            println(n1 + n2)
+        } else if args[1] = "-" {
+            println(n1 - n2)
+        } else if args[1] = "x" {
+            println(n1 * n2)
+        } else if args[1] = "/" {
+            println(n1 / n2)
+        } else {
+            println("Unknown operator: " + args[1])
+        }
+
+        if args[1] = "+" {
+          println(n1 + n2)
+        } else {
+            if args[1] = "-" {
+              println(n1 - n2)
+            } else {
+                if args[1] = "x" {
+                  println(n1 * n2)
+                } else {
+                    if args[1] = "/" {
+                      println(n1 / n2)
+                    } else {
+                        println("Unknown operator: " + args[1])
+                    }
+                }
+            }
+        }
+    }
+  }
+
+
+}

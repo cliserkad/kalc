@@ -1,5 +1,0 @@
-type HelloWorld {
-  main {
-    println("hello world")
-  }
-}

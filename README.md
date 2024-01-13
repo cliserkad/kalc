@@ -1,4 +1,3 @@
-# kdl-base
-Sample kdl project built with Maven
+# kalc
 
-[Main kdl repo](https://github.com/cliserkad/kdl)
+Sample program written in kdl for proof of concept.
